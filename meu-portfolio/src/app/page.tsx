@@ -48,7 +48,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-screen bg-gradient-to-b from-black to-[#060010] p-8">
+      <section className="h-screen bg-gradient-to-b from-black from-20% to-[#060010] p-8">
         <h2 className="text-4xl font-bold text-white">Outra Seção</h2>
         <p className="mt-4 text-white">
           Aqui você pode adicionar o restante do seu portfólio, projetos, sobre mim, etc.
