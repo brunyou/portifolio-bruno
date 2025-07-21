@@ -1,5 +1,3 @@
-// src/app/page.tsx
-
 import DarkVeil from "./components/DarkVeil"; 
 import SplitText from "./components/SplitText";
 import TextType from "./components/TextType";
@@ -50,9 +48,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-screen bg-gray-100 p-8">
-        <h2 className="text-4xl font-bold text-black">Outra Seção</h2>
-        <p className="mt-4 text-black">
+      <section className="h-screen bg-gradient-to-b from-black to-[#060010] p-8">
+        <h2 className="text-4xl font-bold text-white">Outra Seção</h2>
+        <p className="mt-4 text-white">
           Aqui você pode adicionar o restante do seu portfólio, projetos, sobre mim, etc.
           O efeito do DarkVeil ficou contido apenas na primeira seção acima.
         </p>
