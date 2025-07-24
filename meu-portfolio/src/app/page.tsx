@@ -69,7 +69,7 @@ export default function Home() {
                   cardDistance={100}
                   verticalDistance={100}
                   delay={3000}
-                  pauseOnHover={true}
+                  pauseOnHover={false}
                 >
                   <Card>
                     <BrowserHeader url="stuttgartmotorsespecializada.com" />
