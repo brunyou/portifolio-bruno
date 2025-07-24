@@ -12,13 +12,13 @@ export default function Header() {
     <header className="fixed top-4 left-0 w-full flex justify-center z-50">
       
       <nav 
-        className="bg-black/30 backdrop-blur-lg border border-white/10 px-6 py-2 rounded-full flex items-center gap-x-6"
+        className="bg-black/15 backdrop-blur-lg border border-white/10 px-6 py-2 rounded-full flex items-center gap-x-6"
       >
         {navLinks.map((link) => (
           <Link
             key={link.href}
             href={link.href}
-            className="text-neutral-300 hover:text-white transition-colors duration-300"
+            className="text-white-300 hover:text-gray transition-colors duration-300"
           >
             {link.name}
           </Link>

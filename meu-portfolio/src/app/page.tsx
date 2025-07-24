@@ -1,7 +1,8 @@
 import DarkVeil from "./components/DarkVeil"; 
 import SplitText from "./components/SplitText";
 import TextType from "./components/TextType";
-
+import CardSwap, { Card } from './components/CardSwap'
+import { BrowserHeader } from "./components/BrowserHeader";
 
 export default function Home() {
   return (
@@ -48,13 +49,54 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-screen bg-gradient-to-b from-black to-[#060010] p-8">
-        <h2 className="text-4xl font-bold text-white">Outra Seção</h2>
-        <p className="mt-4 text-white">
-          Aqui você pode adicionar o restante do seu portfólio, projetos, sobre mim, etc.
-          O efeito do DarkVeil ficou contido apenas na primeira seção acima.
-        </p>
-      </section>
+          <section className="h-screen bg-gradient-to-b from-black to-[#060010] flex items-center justify-center p-8">
+            <div className="relative flex items-center justify-between w-[85%] h-[75%] rounded-[25px] border-2 border-[#530ECF] p-12">
+
+              {/* Lado Esquerdo: Conteúdo de texto (sem alterações) */}
+              <div className="w-2/5">
+                <h2 className="text-4xl font-bold text-white">Websites no ar</h2>
+                <p className="mt-4 text-zinc-300">
+                  Aproveitando uma identidade visual ou criando uma nova do zero, deixando seu negócio mais visível e chamativo.
+                </p>
+              </div>
+
+              {/* Lado Direito: Componente interativo */}
+              {/* --- ALTERAÇÃO APLICADA AQUI --- */}
+              <div className="w-3/5 h-full flex justify-center items-center rounded-2xl overflow-hidden shadow-inner bg-black/20">
+                <CardSwap
+                  width={600}
+                  height={400}
+                  cardDistance={100}
+                  verticalDistance={100}
+                  delay={3000}
+                  pauseOnHover={true}
+                >
+                  <Card>
+                    <BrowserHeader url="stuttgartmotorsespecializada.com" />
+                    <div className="p-4">
+                      <h3 className="font-bold text-white">Oficina Especializada</h3>
+                      <p className="text-zinc-400 text-sm mt-1">Site institucional com sistema de agendamento.</p>
+                    </div>
+                  </Card>
+                  <Card>
+                    <BrowserHeader url="advocacia-exemplo.com" />
+                    <div className="p-4">
+                      <h3 className="font-bold text-white">Escritório de Advocacia</h3>
+                      <p className="text-zinc-400 text-sm mt-1">Design sóbrio e profissional para transmitir confiança.</p>
+                    </div>
+                  </Card>
+                  <Card>
+                    <BrowserHeader url="meu-portfolio.com" />
+                    <div className="p-4">
+                      <h3 className="font-bold text-white">Portfólio Pessoal</h3>
+                      <p className="text-zinc-400 text-sm mt-1">Um lugar para exibir projetos e habilidades.</p>
+                    </div>
+                  </Card>
+                </CardSwap>
+              </div>
+
+            </div>
+          </section>
     </main>
   );
 }
