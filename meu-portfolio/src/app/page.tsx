@@ -52,7 +52,6 @@ export default function Home() {
           <section className="h-screen bg-gradient-to-b from-black to-[#060010] flex items-center justify-center p-8">
             <div className="relative flex items-center justify-between w-[85%] h-[75%] rounded-[25px] border-2 border-[#530ECF] p-12">
 
-              {/* Lado Esquerdo: Conteúdo de texto (sem alterações) */}
               <div className="w-2/5">
                 <h2 className="text-4xl font-bold text-white">Websites no ar</h2>
                 <p className="mt-4 text-zinc-300">
@@ -60,8 +59,6 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Lado Direito: Componente interativo */}
-              {/* --- ALTERAÇÃO APLICADA AQUI --- */}
               <div className="w-3/5 h-full flex justify-center items-center rounded-2xl overflow-hidden shadow-inner bg-black/20">
                 <CardSwap
                   width={600}
